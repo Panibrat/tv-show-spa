@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TvShowPage Component should renders correctly 1`] = `
+<TvShowPage
+  data={
+    Object {
+      "image": Object {
+        "original": "#",
+      },
+      "name": "Name",
+      "summary": "Summary",
+    }
+  }
+  episodesList={Array []}
+  episodesListRequested={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+        Array [],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  isFetching={false}
+  tvShowsRequested={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+        Array [],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+>
+  <div
+    className="container"
+  >
+    <div
+      className="title"
+    >
+      <h1>
+        Name
+      </h1>
+    </div>
+    <div
+      className="content"
+    >
+      <div
+        className="coverImage"
+      >
+        <img
+          alt="Name"
+          src="#"
+        />
+      </div>
+      <div
+        className="info"
+      >
+        <div
+          className="description"
+        >
+          <h3>
+            Description
+          </h3>
+          Summary
+        </div>
+        <div
+          className="episodesContainer"
+        >
+          <h3>
+            Episodes
+          </h3>
+          <div
+            className="episodesList"
+          >
+            <EpisodesList
+              episodesList={Array []}
+            >
+              <div
+                className="container"
+              >
+                <h1>
+                  No episodes yet...
+                </h1>
+              </div>
+            </EpisodesList>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</TvShowPage>
+`;

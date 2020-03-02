@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.text {
+    color: #282c34;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 12px;
+    box-shadow: 5px 6px rgba(88, 88, 88, 0.1);
+}
+
+.text:hover {
+    color: white;
+    background-color: #282c3478;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}

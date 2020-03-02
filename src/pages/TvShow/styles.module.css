@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    color: #282c34;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 10px;
+    color: #282c34;
+    font-size: 22px;
+}
+
+.coverImage {
+    flex: 1;
+    margin: 10px;
+    border: 1px solid rgba(88,88,88, 0.1);
+    border-radius: 12px;
+}
+
+.coverImage img {
+    max-width: 100%;
+}
+
+.episodesContainer {
+    flex: 1;
+    border: 1px solid rgba(88,88,88, 0.1);
+    border-radius: 12px;
+}
+
+.episodesList {
+    max-height: 400px;
+    overflow: auto;
+}
+
+.description {
+    flex: 1;
+    margin-bottom: 20px;
+    padding: 30px;
+    border: 1px solid rgba(88,88,88, 0.1);
+    border-radius: 12px;
+    max-height: 400px;
+    overflow: auto;
+}
+
+
+@media screen and (max-width: 1080px) {
+    .content {
+        flex-direction: column;
+    }
+}
