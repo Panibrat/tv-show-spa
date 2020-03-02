@@ -1,5 +1,5 @@
-import { reducer, initState } from '../reducer';
-import { actionTypes } from '../actions';
+import { reducer, initState } from './reducer';
+import { actionTypes } from './actions';
 
 describe('EpisodeDetail reducer', () => {
     test('should return initial state', () => {

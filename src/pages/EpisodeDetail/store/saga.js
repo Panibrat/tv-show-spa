@@ -1,12 +1,11 @@
 import { put, takeLatest, call } from 'redux-saga/effects';
-
 import { actionTypes, episodeDetailSucceeded, episodeDetailFailed } from './actions';
-import { getApiRequest } from '../service/api.service';
+import { getEpisodeDetailsApiRequest } from '../../../services/api.service';
 
 export function* episodeDetailSaga(params) {
     const { id } = params;
     try {
-        const { data } = yield call(getApiRequest, id);
+        const { data } = yield call(getEpisodeDetailsApiRequest, id);
         yield put(episodeDetailSucceeded({ data }));
 
     } catch (e) {
