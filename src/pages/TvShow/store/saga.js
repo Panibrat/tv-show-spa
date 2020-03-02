@@ -1,12 +1,12 @@
 import { put, takeLatest, call} from 'redux-saga/effects';
 
 import { actionTypes, tvShowSucceeded, tvShowFailed, episodesListSucceeded, episodesListFailed} from './actions';
-import { getApiRequest, getEpisodesApiRequest } from '../service/api.service';
+import { getTvShowApiRequest, getEpisodesApiRequest } from '../../../services/api.service';
 
 
 export function* tvShowSaga() {
     try {
-        const { data } = yield call(getApiRequest);
+        const { data } = yield call(getTvShowApiRequest);
         yield put(tvShowSucceeded({ data }));
 
     } catch (e) {
