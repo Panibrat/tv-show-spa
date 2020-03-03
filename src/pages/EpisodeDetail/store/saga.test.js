@@ -21,7 +21,7 @@ describe('episodeDetailSaga', () => {
         };
         testSaga(episodeDetailSaga, params)
             .next(params)
-            .call(getEpisodeDetailsApiRequest(params))
+            .call(getEpisodeDetailsApiRequest, params.id)
             .next(resp)
             .put(episodeDetailSucceeded(resp))
             .next()
@@ -34,7 +34,7 @@ describe('episodeDetailSaga', () => {
         };
         testSaga(episodeDetailSaga, params)
             .next(params)
-            .call(getEpisodeDetailsApiRequest(params))
+            .call(getEpisodeDetailsApiRequest, params.id)
             .throw(new Error())
             .put(episodeDetailFailed())
             .next()
